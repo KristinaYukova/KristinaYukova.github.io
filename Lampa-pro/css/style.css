@@ -49,7 +49,7 @@ body{
     font-size: 16px;
 }
 .sidebar{
-    background: url(../img/MyCollages.jpg);
+   //background: url(../img/MyCollages.jpg);
     background-size: 50%;
     position: relative;
     padding-bottom: 25px;
@@ -92,19 +92,37 @@ body{
     text-align: center;
     font-size: 30px;
     margin: 30px 0;
+    position: relative;
+}
+.content h3:before{
+    content: "";
+    position: absolute;
+    top: 36px;
+    height: 5px;
+    width: 700px;
+    background: linear-gradient(to right, rgba(252,228,44,1) 0%, rgba(255,255,255,1) 100%);
 }
 .content li>span{
     font-weight:bold;
     color: #3e3939;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
 }
 .content li{
     padding-left: 17px;
+    margin-bottom: 10px;
     position: relative;
     text-align: justify;
-    font-size: 14px;
+    font-size: 17px;
     list-style-type: none;
+}
+.privilege{
+    padding-top: 30px;
+}
+.video{
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 .content li:before{
     content: "";
@@ -118,6 +136,22 @@ body{
 .imgPrivilege img{
     width: 115%;
     height: 115%;
+}
+.in_stock h3{
+    color: #3e3939;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+    position: relative;
+}
+.in_stock h3:before{
+    content: "";
+    position: absolute;
+    top: 36px;
+    height: 5px;
+    width: 200px;
+    background: linear-gradient(to right, rgba(252,228,44,1) 0%, rgba(255,255,255,1) 100%);
 }
 .sales{
     background: #3e3939;
@@ -188,7 +222,18 @@ body{
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    margin: 60px 0 90px 0;
+    margin: 60px 0;
+    position: relative;
+}
+.payment h3:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -66px;
+    top: 36px;
+    height: 5px;
+    width: 132px;
+    background: linear-gradient(to right, rgba(252,228,44,1) 0%, rgba(255,255,255,1) 100%);
 }
 .payment h6{
     color: #3e3939;
@@ -204,7 +249,7 @@ body{
     width: 64px;
     height: 64px;
     display: block;
-    background: url(../img/sprite/badge.png);
+    background: url(../img/sprite/money2.png);
     top: -25px;
     left: 30px;
 }
@@ -225,14 +270,23 @@ body{
     display: inline;
     font-weight:bold;
 }
-
-
 .delivery h3{
     color: #3e3939;
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
-    margin: 0 0 90px 0;
+    margin: 0 0 60px 0;
+    position: relative;
+}
+.delivery h3:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -88px;
+    top: 36px;
+    height: 5px;
+    width: 176px;
+    background: linear-gradient(to right, rgba(252,228,44,1) 0%, rgba(255,255,255,1) 100%);
 }
 .delivery h6{
     color: #3e3939;
@@ -248,12 +302,12 @@ body{
     width: 64px;
     height: 64px;
     display: block;
-    background: url(../img/sprite/truck.png);
+    background: url(../img/sprite/delivery-man.png);
     top: -17px;
     left: 89px;
 }
 .delivery ul+ul h6:before{
-    background: url(../img/sprite/truck1.png);
+    background: url(../img/sprite/package.png);
     top: -17px;
     left: 12px;
 }
